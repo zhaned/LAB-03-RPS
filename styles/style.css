@@ -121,3 +121,7 @@ footer {
   .submit-section{
       margin-top: 90px;
   }
+
+  #results-box{
+      display: none;
+  }
