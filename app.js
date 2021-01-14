@@ -6,6 +6,12 @@ const computersGuess = document.getElementById("computers-guess");
 const winsDiv = document.getElementById("wins");
 const lossesDiv = document.getElementById("losses");
 const totalDiv = document.getElementById("total");
+// const paperImage = document.getElementById('paper-image').style.display='block';
+// const rockImage = document.getElementById('rock-image').style.display='block';
+// const scissorImage = document.getElementById('scissor-image').style.display='block';
+const rockChoice = document.getElementById("rock-choice");
+const paperChoice = document.getElementById("paper-choice");
+const scissorsChoice = document.getElementById("scissors-choice");
 
 
 // initialize state
@@ -34,14 +40,13 @@ submitButton.addEventListener('click', () => {
     } else if(whoWins === "computer gets a point"){
             lossState++
     }
-
     console.log(winsState, "PLAYER POINTSSS");
     console.log(lossState, "COMPUTER POINTSSS");
     console.log(lossState, "=====NEXT GAME=======");
 
     displayResults();
-
 });
+
 
 
 function displayResults() {

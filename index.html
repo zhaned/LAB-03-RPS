@@ -22,16 +22,19 @@
         <section class="main-section">
             <!-- <div> -->
                 <label>Rock
-                    <input type="radio" name="radioname" value="1">
+                    <input type="radio" name="radioname" value="1" id="rock-choice">
+                    <img src="assets/r.png" width="100" height="100" id="rock-image"/>
                 </label>
                 <label>Paper
-                    <input type="radio" name="radioname" value="2">
+                    <input type="radio" name="radioname" value="2" id="paper-choice">
+                    <img src="assets/p.png" width="100" height="100" id="paper-image"/>
                 </label>
                 <label>Scissors
-                    <input type="radio" name="radioname" value="3">
+                    <input type="radio" name="radioname" value="3" id="scissors-choice">
+                    <img src="assets/s.png" width="100" height="100" id="scissor-image"/>
                 </label>
             <!-- </div> -->
-            <button id="submit-button">Submit</button>
+            <button id="submit-button" class="submit-section">Submit</button>
             <div id="computers-guess"></div>
             <div id="wins">Wins: </div>
             <div id="losses">Losses: </div>
