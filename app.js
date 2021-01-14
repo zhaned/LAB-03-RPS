@@ -2,16 +2,11 @@ import { generateRandomNumber, didUserWin } from './utils.js';
 
 // import functions and grab DOM elements
 const submitButton = document.getElementById("submit-button");
-const computersGuess = document.getElementById("computers-guess");
 const winsDiv = document.getElementById("wins");
 const lossesDiv = document.getElementById("losses");
 const totalDiv = document.getElementById("total");
-// const paperImage = document.getElementById('paper-image').style.display='block';
-// const rockImage = document.getElementById('rock-image').style.display='block';
-// const scissorImage = document.getElementById('scissor-image').style.display='block';
-const rockChoice = document.getElementById("rock-choice");
-const paperChoice = document.getElementById("paper-choice");
-const scissorsChoice = document.getElementById("scissors-choice");
+const endDiv = document.getElementById("end");
+
 
 
 // initialize state
@@ -42,9 +37,20 @@ submitButton.addEventListener('click', () => {
     }
     console.log(winsState, "PLAYER POINTSSS");
     console.log(lossState, "COMPUTER POINTSSS");
-    console.log(lossState, "=====NEXT GAME=======");
+    console.log(totalState, "=====NEXT GAME=======");
 
     displayResults();
+
+    if(totalState === 5 &&  winsState > lossState){
+        endDiv.textContent = "Player Wins!";
+        document.getElementById('submit-button').disabled = true;
+    } else if (totalState === 5 &&  winsState < lossState){
+        endDiv.textContent = "Computer Wins!";
+        document.getElementById('submit-button').disabled = true;
+    }
+    
+
+
 });
 
 
