@@ -4,7 +4,7 @@ export function didUserWin(player, computer){
     const rock = 1
     const paper = 2
     const scissors = 3
-    //compare one answer vs the random answer
+    
     if(player === computer){
         const result1 = "I'ts a tie, try again";
         return result1;
@@ -31,7 +31,6 @@ export function didUserWin(player, computer){
 
 
 export function generateRandomNumber(){
-    //generate random number as computers choice 
     const computersChoice = Math.ceil(Math.random()*3);
     return computersChoice;
 }
