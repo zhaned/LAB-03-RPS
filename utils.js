@@ -9,23 +9,23 @@ export function didUserWin(player, computer){
         const result1 = "I'ts a tie, try again";
         return result1;
     } else if(player === rock && computer === paper){
-        const result2 = "computer gets a point";
-        return result2;
+        const resultText2 = "computer gets a point";
+        return resultText2;
     } else if(player === paper && computer === scissors){
-        const result3 = "computer gets a point";
-        return result3;
+        const resultText3 = "computer gets a point";
+        return resultText3;
     }else if(player === scissors && computer === rock){
-        const result4 = "computer gets a point";
-        return result4;
+        const resultText4 = "computer gets a point";
+        return resultText4;
     }else if(player === rock && computer === scissors){
-        const result5 = "player gets a point";
-        return result5;
+        const resultText5 = "player gets a point";
+        return resultText5;
     } else if(player === paper && computer === rock){
-        const result6 = "player gets a point";
-        return result6;
+        const resultText6 = "player gets a point";
+        return resultText6;
     } else if(player === scissors && computer === paper){
-        const result7 = "player gets a point";
-        return result7;
+        const resultText7 = "player gets a point";
+        return resultText7;
     }
 }
 

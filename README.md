@@ -23,3 +23,48 @@
             - grab the choise and get its value 
         - now we compare the users choice with the computers random choice
         - display result 
+
+
+```
+ARCHIVED 
+
+export function didUserWin(player, computer){
+    const rock = 1
+    const paper = 2
+    const scissors = 3
+
+    let computerPoints = 0;
+    let playerPoints = 0;
+
+    //compare one answer vs the random answer
+    if(player === computer){
+        const result1 = "I'ts a tie, try again";
+        return result1;
+    } else if(player === rock && computer === paper){
+        const resultText2 = "computer gets a point";
+        const resultPoint2 = computerPoints++;
+        return (resultPoint2, resultText2);
+    } else if(player === paper && computer === scissors){
+        const resultText3 = "computer gets a point";
+        const resultPoint3 = computerPoints++;
+        return (resultPoint3, resultText3);
+    }else if(player === scissors && computer === rock){
+        const resultText4 = "computer gets a point";
+        const resultPoint4 = computerPoints++;
+        return (resultPoint4, resultText4);
+    }else if(player === rock && computer === scissors){
+        const resultText5 = "player gets a point";
+        const resultPoint5 = playerPoints++;
+        return (resultText5, resultPoint5);
+    } else if(player === paper && computer === rock){
+        const resultText6 = "player gets a point";
+        const resultPoint6 = playerPoints++;
+        return (resultText6, resultPoint6);
+    } else if(player === scissors && computer === paper){
+        const resultText7 = "player gets a point";
+        const resultPoint7 = playerPoints++;
+        return (resultText7, resultPoint7);
+    }
+
+}
+```
